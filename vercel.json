@@ -7,6 +7,9 @@
     }
   ],
     "cleanUrls": true,  
-    
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
+  "redirects": [
+    { "source": "/api/(.*)", "destination": "/api", "permanent": false }
+  ]
 }
