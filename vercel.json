@@ -6,25 +6,7 @@
       "use":"@vercel/node"
     }
   ],
-  
-  "buildCommand": "next build",
-"crons": [
-      {
-        "path": "/api/index.js",
-        "schedule": "/"
-      }
-     
-    ],
+    "cleanUrls": true,  
     
-      "devCommand": "next dev",
-    
-  
-  "routes":[
-    {
-      "src":"/(.*)",
-      "dest":"/"
-    }
-  ],
- 
   "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
 }
