@@ -6,6 +6,19 @@
       "use":"@vercel/node"
     }
   ],
+  
+  "buildCommand": "next build",
+"crons": [
+      {
+        "path": "/api/index.js",
+        "schedule": "* * * * *"
+      }
+     
+    ],
+    
+      "devCommand": "next dev",
+    
+  
   "routes":[
     {
       "src":"/(.*)",
